@@ -55,9 +55,9 @@ console.log(subscription)
         <NameForm userName={userDetails?.full_name ?? ''} />
         <EmailForm userEmail={user.email} />
 
-        {isSubscriber && (
-          <MarketingForm /> // Render the MarketingForm for subscribers
-        )}
+      
+          <MarketingForm />
+      
       </div>
     </section>
   );
