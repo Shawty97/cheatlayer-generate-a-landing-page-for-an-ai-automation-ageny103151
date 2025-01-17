@@ -14,7 +14,7 @@ export async function POST(request) {
     const payload = {
       start: "desktop",
       goal: "open tiktok",
-      key: process.env.AGENT_API_KEY, // Securely use the API key from environment variables
+      key: "66cd1bc53e281423b509383d", // Securely use the API key from environment variables
       json_output: [
         {
           type: "cheat_file",
