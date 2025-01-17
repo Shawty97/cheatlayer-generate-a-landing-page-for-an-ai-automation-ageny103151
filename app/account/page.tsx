@@ -41,6 +41,11 @@ export default async function AccountPage() {
         </div>
       </div>
       <div className="p-4">
+         <Pricing
+      user={user}
+      products={products ?? []}
+      subscription={subscription}
+      />
         <CustomerPortalForm subscription={subscription} />
         <NameForm userName={userDetails?.full_name ?? ''} />
         <EmailForm userEmail={user.email} />
