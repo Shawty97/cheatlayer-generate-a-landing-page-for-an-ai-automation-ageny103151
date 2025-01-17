@@ -45,6 +45,7 @@ console.log(subscription)
         </div>
       </div>
       <div className="p-4">
+        {subscription}
          <Pricing
       user={user}
       products={products ?? []}
