@@ -29,7 +29,9 @@ export default async function AccountPage() {
     redirect('/signin');
     return null; // Ensure the component doesn't attempt to render further
   }
-
+console.log(subscription)
+  console.log(user);
+  console.log(userDetails);
   const isSubscriber = subscription && subscription.status === 'active'; // Adjust based on your subscription status field
 
   return (
