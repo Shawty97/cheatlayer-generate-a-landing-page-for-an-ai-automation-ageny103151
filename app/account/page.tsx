@@ -29,11 +29,6 @@ export default async function AccountPage() {
     redirect('/signin');
     return null; // Ensure the component doesn't attempt to render further
   }
-console.log(subscription)
-  console.log(user);
-  console.log(userDetails);
-  const isSubscriber = subscription && subscription.status === 'active'; // Adjust based on your subscription status field
-
   return (
     <section className="mb-32 bg-black">
       <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
@@ -45,7 +40,7 @@ console.log(subscription)
         </div>
       </div>
       <div className="p-4">
-        {subscription}
+       
          <Pricing
       user={user}
       products={products ?? []}
