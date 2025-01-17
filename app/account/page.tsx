@@ -24,7 +24,7 @@ export default async function AccountPage() {
     getSubscription(supabase),
     getProducts(supabase),
   ]);
-
+console.log(JSON.stringify(subscription))
   if (!user) {
     redirect('/signin');
     return null; // Ensure the component doesn't attempt to render further
@@ -35,7 +35,7 @@ export default async function AccountPage() {
         <div className="sm:align-center sm:flex sm:flex-col">
           <h1 className="text-3xl font-bold text-white">Account Details</h1>
           <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            Manage your account and subscription details below. {subscription}
+            Manage your account and subscription details below. 
           </p>
         </div>
       </div>
